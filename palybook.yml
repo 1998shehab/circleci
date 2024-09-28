@@ -1,0 +1,7 @@
+---
+- name: minikube
+  hosts: local
+
+  tasks:
+  - name: run deployment
+    ansible.builtin.command: minikube kubectl -- apply -f deployment.yml
